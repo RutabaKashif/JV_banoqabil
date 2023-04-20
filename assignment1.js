@@ -32,9 +32,8 @@ var wheat = 320
 var dates = 2800                                        
 var raisin = 4800
 var oats = 480
-var familyMembers = +prompt("enter your family member")     
-var fitramethod = prompt(" wheat , oats, dates, raisin")   
-var fitrahvalue = +prompt("320 , 480, 2800, 4800")      
+var familyMembers = +prompt("enter your family member")      
+var fitrahvalue = +prompt(" wheat: 320 , oats: 480, dates: 2800, raisin: 4800")      
 var result = familyMembers*fitrahvalue                      
 alert("your fitrah is"+result)                               
 
@@ -98,18 +97,18 @@ alert(capitalname + capitalizedname)
 var contactNames = []
 var contactNumbers = []
 
-for (i = 0; i < 5; i++) 
+for (u = 0; u < 5; u++) 
 { var username = prompt("enter contact name")
 contactNames.push(username)
   }
 
-  for (i = 0; i < 5; i++) 
+  for (u = 0; u < 5; u++) 
 { var usernumber = prompt("enter contact number")
 contactNumbers.push(usernumber)
   }
 
-  for (i = 0; i < 5; i++) 
-{ console.log (contactNames[i]  + contactNumbers[i])
+  for (u = 0; u < 5; u++) 
+{ console.log (contactNames[u]  + contactNumbers[u])
 }
  
 
@@ -121,13 +120,13 @@ contactNumbers.push(usernumber)
 //array and total number of items remaining.
 
 var dishes = [ "pizza" , "pasta", "lasagna", "calzone", "pizzafries", "garlicbread"]
-var userposition = +prompt("enter the position of dish you want to remove from the list. there is six dishes: no 0. pizza\ no 1. pasta\ no 2. lasagna\ no 3. calzone\ no 4. pizzafries\ no 5. garlicbread")
-var removeddish =  dishes.splice(userposition, 2)
+var userposition = +prompt("enter the position of dish you want to remove from the list. there is six dishes: 1. pizza \ 2. pasta \ 3. lasagna \ 4. calzone \ 5. pizzafries \ 6. garlicbread")
+var removeddish =  dishes.splice(userposition, 1)
 console.log ("the removed dish is "+removeddish)
  
 console.log("remining dishes are ")
-for (i = 0; i < dishes.length; i++) {
-    console.log(i + ": " + dishes[i]) }
+for (r = 0; r < dishes.length; r++) {
+    console.log(r + ": " + dishes[r]) }
     console.log(  "the remaining dishes are "+ dishes.length)
 
 
@@ -153,9 +152,9 @@ var age = +prompt("enter your age")
 if((nationality == 'Pakistani' || nationality == 'Indian')){
     alert("you are eligible to cast vote")}
 
- if(( gender == 'Male' && age>18)){
+ if(( gender == 'Male' && age>=18)){
     }
-     if( gender== 'female' && age>18){
+     if( gender== 'female' && age>=18){
         var marritalstatus = prompt("what is your marrital status  \ 1. married \ 2. unmarried")
         marritalstatus.toLowerCase
       if(marritalstatus == 'married') {
